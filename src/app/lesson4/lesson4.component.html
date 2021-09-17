@@ -1,0 +1,40 @@
+<p>lesson4 works!</p>
+
+<!-- pipes -->
+<!-- <h4>{{ userName | lowercase }}</h4>
+<h4>{{ userName | uppercase }}</h4>
+<h4>{{ userName | titlecase }}</h4>
+<h4>{{ userName | slice:5:-1 }}</h4>
+<h4>{{ userName | slice:5 }}</h4>
+<hr>
+<h4>{{ price | number }}</h4>
+<h4>{{ price | number:'2.0-0' }}</h4>
+<h4>{{ price | currency:'UAH':'symbol-narrow' }}</h4>
+<h4>{{ price | currency:'EUR':'symbol-narrow' }}</h4>
+<h4>{{ price | currency:'USD':'symbol-narrow' }}</h4>
+<h4>{{ price | currency:'PLN':'symbol-narrow':'4.0-0' }}</h4>
+<hr>
+<h4>{{ today }}</h4>
+<h4>{{ today | date:'medium'}}</h4>
+<h4>{{ today | date:'mediumDate'}}</h4>
+<h4>{{ today | date:'shortTime'}}</h4>
+<h4>{{ today | date:'dd.mm.yyyy'}}</h4>
+<h4>{{ today | date:'dd/mm/yyyy'}}</h4>
+<hr> -->
+
+<input type="text" [(ngModel)]="field">
+<input type="checkbox" [checked]="isSorted" >
+<ul>
+    <li *ngFor="let name of arrNames | search:field:sort()">
+        {{ name }}
+    </li>
+</ul>
+
+
+<!-- variable | pipe -->
+<!-- {{ variable | lowercase }} -->
+<!-- {{ variable | uppercase }} -->
+<!-- {{ variable | titlecase }} -->
+<!-- {{ variable | slice:start:end }} -->
+
+<!-- {{ variable | number[:digitInfo = minInt.minFrac-maxFrac] }} -->

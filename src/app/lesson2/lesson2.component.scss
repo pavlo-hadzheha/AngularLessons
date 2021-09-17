@@ -1,0 +1,15 @@
+ol {
+    list-style: none;
+}
+.item {
+    min-width: max(300px, 50vw);
+    border: 2px solid gold;
+    padding: 10px;
+    margin: 0 0 5px;
+    display: flex;
+    justify-content: space-between;
+
+    * {
+        margin-right: 5px;
+    }
+}

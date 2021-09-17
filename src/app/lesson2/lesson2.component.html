@@ -1,0 +1,64 @@
+<!-- <p>lesson2 works!</p> -->
+<!-- Директива
+    - Компонента (урок2)
+    - Структурні
+    - Атрибувтивні
+--> 
+
+<!-- - Структурні -->
+<!-- *ngIf, *ngFor, *ngSwitch -->
+<!-- *ngIf, --> 
+
+<!-- <h2 *ngIf="!visible">some text 1</h2> -->
+<!-- <h2 *ngIf="visible">some text 2</h2> -->
+<!-- <button (click)="toggleVisible()">Switch</button> -->
+
+<!-- <ng-container *ngIf="visible; else elseTemplate"> -->
+<!--     <h1>Default</h1> -->
+<!-- </ng-container> -->
+<!-- <ng-template #elseTemplate> -->
+<!--     <h1>Some title</h1> -->
+<!--     <h3>Some subtitle</h3> -->
+<!--     <p>Dolor illo impedit saepe quibusdam rem libero Dolorum consectetur quibusdam sed numquam aperiam Harum ipsum minus dolor iusto facere atque Ut iste facilis quo aliquid tempore? Omnis ipsum dolores architecto ea cumque aperiam? Qui aspernatur ipsum iusto deserunt accusantium Eligendi?</p> -->
+<!-- </ng-template> -->
+
+<!-- <ng-container *ngIf="visible; then thenTemplate; else elseTemplate"></ng-container> -->
+<!-- <ng-template #thenTemplate><h2>thenTemplate</h2></ng-template> -->
+<!-- <ng-template #elseTemplate><h2>elseTemplate</h2></ng-template> -->
+
+<!-- *ngFor -->
+
+<!-- <input type="text" [(ngModel)]="input"> -->
+<!-- <input type="button" value="Add" (submit)="addUser()" [disabled]="!input"> -->
+<!-- <ol> -->
+<!--     <li *ngFor="let name of arrNames; let index"> -->
+<!--         {{ name }} -->
+<!--         <input type="button" value="Edit" (click)="editUser(index)"> -->
+<!--         <input type="button" value="Delete" (click)="deleteUser(index)"> -->
+<!--     </li> -->
+<!-- </ol> -->
+
+<!-- <div class="container-fluid"> -->
+<!--     <div class="w-25 hstack my-4"> -->
+<!--         <input class="form-control me-2" type="text" [(ngModel)]="input" [ngModelOptions]="{standalone: true}"> -->
+<!--         <input class="form-control btn btn-primary" *ngIf="!isEdit" type="button" value="Add" (click)="addUser()" [disabled]="!input"> -->
+<!--         <input class="form-control btn btn-success" *ngIf="isEdit" type="button" value="Save" (click)="saveChanges()" [disabled]="!input"> -->
+<!--     </div> -->
+<!--     <ol class="p-0"> -->
+<!--         <li class="item rounded" *ngFor="let name of arrNames; index as i; let total = count"> -->
+<!--             <span class="fw-bold fs-3 text-secondary">{{ i + 1 }} / {{ total }} {{ name }}</span> -->
+<!--             <div> -->
+<!--                 <input class="btn btn-warning" type="button" value="Edit" (click)="editUser(i)" [disabled]="isEdit"> -->
+<!--                 <input class="btn btn-danger" type="button" value="Delete" (click)="deleteUser(i)" [disabled]="isEdit"> -->
+<!--             </div> -->
+<!--         </li> -->
+<!--     </ol> -->
+<!-- </div> -->
+
+<input type="text" [(ngModel)]="input" name="newName">
+<div [ngSwitch]="input">
+    <p *ngSwitchCase="'Ivan'">Hello Ivan</p>
+    <p *ngSwitchCase="'Petro'">Hello Petro</p>
+    <p *ngSwitchDefault>Hello Guest</p>
+</div>
+

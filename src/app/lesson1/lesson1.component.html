@@ -1,0 +1,15 @@
+<p>lesson1 works!</p>
+<hr>
+<h2>Hello {{ name }}</h2>
+<h2>Age {{ age }}</h2>
+<h2>Status: {{ isOnline }}</h2>
+<h2>Status: {{ isOnline ? 'online' : 'offline' }}</h2>
+<h2>Users: {{ users.join(' - ') }}</h2>
+<hr>
+<h3 class="red">Message: {{ sayHello() }}</h3>
+<hr>
+<a [attr.href]="urlPath" [textContent]="urlName" target="_blank"></a>
+
+
+
+

@@ -1,0 +1,67 @@
+<div class="container p-4">
+
+  <!--     <table class="table text-center"> -->
+  <!--         <thead> -->
+  <!--             <th>#</th> -->
+  <!--             <th>Name</th> -->
+  <!--             <th>Age</th> -->
+  <!--             <th>Status</th> -->
+  <!--         </thead> -->
+  <!--         <tbody> -->
+  <!--             <tr *ngFor="let user of arrUsers; let i = index; let total = count"> -->
+  <!--                 <td>{{ i + 1 }} / {{ total }}</td> -->
+  <!--                 <td>{{ user.name }}</td> -->
+  <!--                 <td>{{ user.age }}</td> -->
+  <!--                 <td [ngStyle]="{color: user.status ? 'green' : 'red' }"> -->
+  <!--                     <input type="checkbox" [checked]="user.status" (change)="changeStatus(user)"> -->
+  <!--                     {{ user.status ? 'Online' : 'Offline'}} -->
+  <!--                 </td> -->
+  <!--             </tr> -->
+  <!--         </tbody> -->
+  <!--     </table> -->
+  <!-- <ng-content></ng-content> -->
+  <!-- <hr> -->
+
+  <!-- <div class="container my-4"> -->
+  <!--     <table class="table text-center"> -->
+  <!--         <thead> -->
+  <!--             <th>#</th> -->
+  <!--             <th>Name</th> -->
+  <!--             <th>Age</th> -->
+  <!--             <th>Status</th> -->
+  <!--         </thead> -->
+  <!--         <tbody> -->
+  <!--             <tr *ngFor="let user of arrUsers; let i = index; let total = count"> -->
+  <!--                 <td>{{ i + 1 }} / {{ total }}</td> -->
+  <!--                 <td>{{ user.name }}</td> -->
+  <!--                 <td>{{ user.age }}</td> -->
+  <!--                 <td [ngStyle]="{color: user.status ? 'green' : 'red' }"> -->
+  <!--                     <input type="checkbox" [checked]="user.status" (change)="changeStatus(user)"> -->
+  <!--                     {{ user.status ? 'Online' : 'Offline'}} -->
+  <!--                 </td> -->
+  <!--             </tr> -->
+  <!--         </tbody> -->
+  <!--     </table> -->
+  <!-- </div> -->
+
+  <!-- Parent ==> Child -->
+  <!-- <ng-content></ng-content> -->
+  <!-- <h1>Message from parent: {{ childMessage }}</h1> -->
+
+  <!-- Child ==> Parent -->
+
+  <!-- <div class="row g-2 w-100"> -->
+  <!--   <div class="col-8"> -->
+  <!--     <input id="dataSent" class="form-control" type="text" [(ngModel)]="preOutputData"> -->
+  <!--   </div> -->
+  <!--   <div class="col-4"> -->
+  <!--     <button class="form-control btn btn-primary" (click)="sendDataUpward()">Send</button> -->
+  <!--   </div> -->
+  <!-- </div> -->
+
+  <div class="row g-2">
+      <input type="button" value="+" (click)="increment(true, $event)">
+      <input type="button" value="-" (click)="increment(false, $event)">
+  </div>
+
+</div>
